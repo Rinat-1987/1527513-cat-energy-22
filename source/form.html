@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo"><img src="img/logo-catenergy.png" width="33" height="38" alt="Логотип Cat Energy"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Cat Energy</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page__main">
+   <div class="main-header__wrapper form-diet">
+    <h1 class="form-diet__title">Подбор программы</h1>
+    <p class="form-diet__content">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+    <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-diet__fieldset">
+          <legend class="personal-data">СТОИМОСТЬ:</legend>
+
+            <div class="price-controls">
+              <label class="min-price">
+                ОТ <input type="text" name="min-price" value="0" aria-label="Стоимость от">
+              </label>
+              <label class="max-price">
+                ДО <input type="text" name="max-price" value="15 000" aria-label="Стоимость до">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-grid-fieldset">
+          <legend class="filter-grid-legend">СЕТКА:</legend>
+          <ul class="filter-grid-list">
+            <li>
+              <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="filter-adaptiv" aria-label="Адаптивная сетка" checked>
+              <label for="filter-adaptiv">Адаптивная</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="filter-fix" aria-label="Фиксированная сетка">
+              <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="filter-gum" aria-label="Резиновая сетка">
+              <label for="filter-gum">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="button-filter" type="submit">ПОКАЗАТЬ</button>
+      </form>
