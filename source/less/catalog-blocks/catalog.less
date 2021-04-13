@@ -1,0 +1,132 @@
+.catalog {
+  margin: 0 20px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 50% 40px;
+  width: 320px;
+  height: 190px;
+}
+
+.catalog__link--img {
+  margin: 0;
+  padding: 0;
+  color: @black;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.catalog__title-card {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  align-items: left;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.catalog__link--title {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.catalog__description {
+  margin: 0;
+  padding: 0;
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
+
+.catalog__items {
+  display: flex;
+}
+
+.catalog__term,
+.catalog__property {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__button {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  padding: 10px;
+  min-width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__item--additional {
+  margin-bottom: 45px;
+}
+
+.catalog__title-card--bonus {
+  margin-top: 30px;
+  padding-top: 50px;
+  background-image: url(../img/plus.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.catalog__text {
+  margin-bottom: 35px;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__button--all {
+  padding: 10px 105px;
+  background-color: @grey;
+  color: @grey-black;
+  white-space: nowrap;
+}
+
+.catalog-optional {
+  margin: 0 20px;
+}
+
+.catalog-optional__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.catalog-optional__list {
+  list-style: none;
+}
+
+.catalog-optional__title-card {
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: @radio;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.catalog-optional__description {
+}
+
+.catalog-optional__term {
+  font-family: Arial;
+  line-height: 14px;
+}
