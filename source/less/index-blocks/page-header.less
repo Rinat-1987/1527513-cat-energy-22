@@ -1,4 +1,34 @@
 .page-header {
   display: flex;
   margin: 10px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-mobile {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    display: block;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

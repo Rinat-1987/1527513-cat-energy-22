@@ -5,6 +5,14 @@
 
 .diet-process__wrapper {
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .diet-process__subject {
@@ -15,7 +23,24 @@
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+.diet-process__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
 
 .diet-process__item {
   position: relative;
