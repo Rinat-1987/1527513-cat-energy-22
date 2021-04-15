@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+  }
 }
 
 .example-cat__wrapper {
@@ -25,6 +33,15 @@
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
 }
 
 .example-cat__text {
@@ -32,21 +49,45 @@
   font-family: Arial;
   text-align: left;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+   width: 436px;
+  }
 }
 
 .example-cat__term {
   font-family: Arial;
   font-size: 12px;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example-cat__description {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-cat__result {
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

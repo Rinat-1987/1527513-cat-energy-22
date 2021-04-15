@@ -13,12 +13,22 @@
 .footer__slogan {
   font-size: 16px;
   text-transform: uppercase;
+  color: @footer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .footer__address {
   font-family: Arial;
   line-height: 20px;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .footer-contacts {
