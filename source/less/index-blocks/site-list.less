@@ -1,10 +1,9 @@
 .site-list {
   list-style: none;
-}
 
-@media (min-width: @tablet-width) {
-  .site-list__item a {
+  @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -17,6 +16,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-left: 35px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -24,6 +24,6 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: @white;
+    color: @black;
   }
 }

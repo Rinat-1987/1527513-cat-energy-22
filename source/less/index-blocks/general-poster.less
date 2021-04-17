@@ -1,8 +1,9 @@
 .general-poster {
-  margin-bottom: 30px;
+  margin: 0;
   background-image: url(../img/index-background.jpg);
   background-repeat: no-repeat;
 	background-position: top 0;
+  background-size: 100% auto;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -12,20 +13,20 @@
     background-image: url(../img/index-background.jpg);
     background-repeat: no-repeat;
   	background-position: top right;
-    width: 720px;
-    height: 694px;
+    height: 594px;
   }
 }
 
 .general-poster__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    max-width: 600px;
+    padding: 0 50px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    padding: 0 80px;
   }
 }
 
@@ -70,16 +71,13 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    order: 1;
-    z-index: 1;
   }
 }
 
 .general-poster__img {
+
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
-    order: 2;
-    z-index: 2;
   }
 }

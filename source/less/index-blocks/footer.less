@@ -6,6 +6,10 @@
   padding-top: 18px;
 }
 
+.footer__cooperation iframe {
+  width: 100%;
+}
+
 .footer__cooperation--form {
   background-color: @grey;
 }
@@ -32,8 +36,14 @@
 }
 
 .footer-contacts {
+  display: flex;
+  flex-direction: column;
   padding-top: 39px;
   background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .footer-contacts__logo {
