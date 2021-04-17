@@ -1,5 +1,15 @@
 .form-diet__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form-diet__title {
@@ -9,11 +19,21 @@
   font-size: 36px;
   line-height: 36px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-diet__text {
   text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__fieldset {
@@ -34,6 +54,11 @@
   white-space: nowrap;
   height: 45px;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__label input {
@@ -45,16 +70,32 @@
   color: @grey-black;
   border: 1px solid @input;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
 .form-diet__label input::placeholder {
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__label--radio {
   color: @radio;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__label--radio input {
@@ -66,6 +107,11 @@
   line-height: 26px;
   text-transform: none;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-diet__label textarea {
@@ -75,10 +121,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.form-diet__label textarea {
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__fieldset--checkbox {
@@ -95,9 +143,17 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form-diet__required-fields {
   font-family: Arial;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
