@@ -36,6 +36,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .form-diet__column {
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+  }
+}
+
 .form-diet__fieldset {
   display: grid;
   padding: 0;
@@ -45,6 +53,12 @@
   text-transform: uppercase;
 }
 
+.form-diet__fieldset--column {
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
 .form-diet__label {
   margin: 0;
   padding: 0;
@@ -52,10 +66,10 @@
   font-size: 16px;
   text-align: left;
   white-space: nowrap;
-  height: 45px;
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -89,6 +103,33 @@
   }
 }
 
+.form-diet__label input[type=text]{
+  width: 100vw;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+}
+
+.form-diet__label input[type=email]{
+  width: 100vw;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.form-diet__fieldset--border {
+  min-height: 160px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    min-height: 195px;
+    border: 1px solid @input;
+  }
+}
+
 .form-diet__label--radio {
   color: @radio;
 
@@ -100,6 +141,14 @@
 
 .form-diet__label--radio input {
   text-align: left;
+}
+
+.form-diet__contacts {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .form-diet__legend {
@@ -122,19 +171,47 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-black;
+  resize: none;
 
   @media (min-width: @tablet-width) {
+    width: 631px;
+    height: 174px;
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
-.form-diet__fieldset--checkbox {
-  margin-top: 125px;
+.form-diet__bonus {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 630px
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form-diet__bonus .form-diet__label {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.form-diet__notice {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .form-diet__button {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   padding: 7px 73px;
   width: 280px;
@@ -145,7 +222,12 @@
   border: none;
 
   @media (min-width: @tablet-width) {
+    margin-right: 61px;
     font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 81px;
   }
 }
 

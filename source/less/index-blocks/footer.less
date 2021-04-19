@@ -3,15 +3,31 @@
 }
 
 .footer__cooperation {
+  display: flex;
+  justify-content: space-between;
   padding-top: 18px;
 }
 
-.footer__cooperation iframe {
+.footer__wrapper iframe {
   width: 100%;
+  z-index: 2;
 }
 
 .footer__cooperation--form {
   background-color: @grey;
+}
+
+
+@media (min-width: @desktop-width) {
+  .footer__cooperation {
+    position: relative;
+    width: 570px;
+    height: 201px;
+    left: 80px;
+    top: 280px;
+    z-index: 3;
+    background-color: @white;
+  }
 }
 
 .footer__slogan {
