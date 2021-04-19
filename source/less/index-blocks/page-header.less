@@ -1,0 +1,37 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width)  {
+    width: 700px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    width: 1220px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-mobile {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    display: block;
+    margin-top: 17px;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

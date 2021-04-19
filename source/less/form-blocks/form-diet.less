@@ -1,5 +1,15 @@
 .form-diet__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form-diet__title {
@@ -9,11 +19,29 @@
   font-size: 36px;
   line-height: 36px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-diet__text {
   text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-diet__column {
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+  }
 }
 
 .form-diet__fieldset {
@@ -25,6 +53,12 @@
   text-transform: uppercase;
 }
 
+.form-diet__fieldset--column {
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
 .form-diet__label {
   margin: 0;
   padding: 0;
@@ -32,7 +66,13 @@
   font-size: 16px;
   text-align: left;
   white-space: nowrap;
-  height: 45px;
+  color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__label input {
@@ -40,15 +80,75 @@
   padding: 0;
   padding: 13px 14px;
   font-size: 16px;
+  line-height: 18px;
+  color: @grey-black;
   border: 1px solid @input;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
 .form-diet__label input::placeholder {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-diet__label input[type=text]{
+  width: 100vw;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+}
+
+.form-diet__label input[type=email]{
+  width: 100vw;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.form-diet__fieldset--border {
+  min-height: 160px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    min-height: 195px;
+    border: 1px solid @input;
+  }
+}
+
+.form-diet__label--radio {
+  color: @radio;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-diet__label--radio input {
   text-align: left;
+}
+
+.form-diet__contacts {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .form-diet__legend {
@@ -56,6 +156,11 @@
   line-height: 26px;
   text-transform: none;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-diet__label textarea {
@@ -65,18 +170,48 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.form-diet__label textarea::placeholder {
   color: @grey-black;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 631px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
-.form-diet__fieldset--checkbox {
-  margin-top: 125px;
+.form-diet__bonus {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 630px
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form-diet__bonus .form-diet__label {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.form-diet__notice {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .form-diet__button {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   padding: 7px 73px;
   width: 280px;
@@ -85,9 +220,22 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 61px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 81px;
+  }
 }
 
 .form-diet__required-fields {
   font-family: Arial;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }

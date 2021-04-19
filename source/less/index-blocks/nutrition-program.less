@@ -1,0 +1,125 @@
+.nutrition-program__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.nutrition-program__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.nutrition-program__item {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  padding-left: 53px;
+  width: 280px;
+  background-color: @grey;
+  list-style: none;
+
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.nutrition-program__subject {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 34px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+
+.nutrition-program__subject--slim::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  background-image: url(../img/program-slim.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-position: right top;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-position: left top;
+  }
+}
+
+.nutrition-program__content {
+  margin-left: 20px;
+  margin-right: 33px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @bottom;
+  font-family: Arial;
+  color: @grey-black;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.nutrition-program__link svg {
+  @media (min-width: @tablet-width) {
+    width: 165px;
+    height: 38px;
+  }
+}
+
+.nutrition-program__subject--pro::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  background-image: url(../img/program-pro.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-position: right top;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-position: left top;
+  }
+}

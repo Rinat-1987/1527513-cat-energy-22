@@ -1,0 +1,133 @@
+.diet-process {
+  margin-top: 27px;
+  margin-bottom: 42px;
+}
+
+.diet-process__wrapper {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
+}
+
+.diet-process__subject {
+  margin: 0;
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.diet-process__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+
+.diet-process__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  list-style: none;
+  color: @grey-black;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    height: 280px;
+  }
+}
+
+.diet-process__item--icon-first {
+  @media (min-width: @tablet-width) {
+    height: 280px;
+    background-image: url(../img/1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.diet-process__item--icon-second {
+  @media (min-width: @tablet-width) {
+    height: 280px;
+    background-image: url(../img/2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.diet-process__item--icon-third {
+  @media (min-width: @tablet-width) {
+    height: 280px;
+    background-image: url(../img/3.png);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.diet-process__item--icon-fourth {
+  @media (min-width: @tablet-width) {
+    height: 280px;
+    background-image: url(../img/4.png);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.diet-process__item--icon-first::after,
+.diet-process__item--icon-second::after,
+.diet-process__item--icon-third::after,
+.diet-process__item--icon-fourth::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  left: -38px;
+  top: 0;
+}
+
+.diet-process__item--icon-first::after {
+  background-image: url(../img/diet-process-1.png);
+}
+
+.diet-process__item--icon-second::after {
+  background-image: url(../img/diet-process-2.png);
+}
+
+.diet-process__item--icon-third::after {
+  background-image: url(../img/diet-process-3.png);
+}
+
+.diet-process__item--icon-fourth::after {
+  background-image: url(../img/diet-process-4.png);
+}
+
+.diet-process__content {
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+  }
+}

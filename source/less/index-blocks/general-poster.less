@@ -1,0 +1,83 @@
+.general-poster {
+  margin: 0;
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+	background-position: top 0;
+  background-size: 100% auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../img/index-background.jpg);
+    background-repeat: no-repeat;
+  	background-position: top right;
+    height: 594px;
+  }
+}
+
+.general-poster__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 600px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 80px;
+  }
+}
+
+.general-poster__title {
+  padding-top: 27px;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 36px;
+  color: #FFFFFF;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    text-align: left;
+  }
+}
+
+.general-poster__slogan {
+  line-height: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+  }
+}
+
+.general-poster__link {
+  margin: 0 auto;
+  padding: 0;
+  padding: 7px 73px;
+  width: 280px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.general-poster__img {
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+}
