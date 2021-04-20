@@ -2,11 +2,29 @@
   padding-top: 42px;
   border: none;
   background-color: @background;
+
+  @media (min-width: @desktop-width) {
+    width: 640px;
+  }
+}
+
+.slider__img {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
+}
+
+.slider__roller {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px auto 31px;
+  width: 228px;
 }
 
 .slider__toggle {
-  margin-top: 27px;
-  margin-bottom: 31px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
