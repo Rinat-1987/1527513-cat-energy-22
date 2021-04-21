@@ -1,6 +1,7 @@
 .footer__wrapper {
   position: relative;
   margin: 0 auto;
+  background-color: @grey;
 }
 
 .footer__cooperation {
@@ -70,7 +71,14 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 0 61px;
+    padding: 55px 30px 61px;
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 55px 110px 61px;
   }
 }
 
