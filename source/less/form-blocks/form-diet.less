@@ -24,6 +24,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .form-diet__text {
@@ -31,6 +35,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 46px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -54,6 +59,8 @@
 }
 
 .form-diet__fieldset--column {
+  padding-bottom: 30px;
+
   @media (min-width: @desktop-width) {
     width: 570px;
   }
@@ -77,7 +84,7 @@
 }
 
 .form-diet__label input {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding: 13px 14px;
   font-size: 16px;
@@ -107,13 +114,21 @@
 .form-diet__label input[type=text]{
   width: 170px;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
   @media (min-width: @desktop-width) {
     width: 430px;
   }
 }
 
 .form-diet__label input[type=email]{
-  width: 40%;
+  width: 170px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: @desktop-width) {
     width: 436px;
@@ -121,14 +136,43 @@
 }
 
 .form-diet__fieldset--border {
-  min-height: 160px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid @bottom;
+  border-bottom: 1px solid @bottom;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 0;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    width: 570px;
     min-height: 195px;
     border: 1px solid @input;
   }
+}
+
+.form-diet__fieldset--contacts {
+  display: block;
+}
+
+.form-diet__fieldset--comment {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.form-diet__legend--contacts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+    width: max-content;
+  }
+}
+
+.form-diet__legend--comment {
+  padding-top: 40px;
 }
 
 .form-diet__label--radio {
@@ -158,6 +202,10 @@
     justify-content: space-between;
     width: 900px;
   }
+}
+
+.form-diet__contacts .form-diet__label input {
+  margin-bottom: 13px;
 }
 
 .form-diet__legend {
@@ -195,6 +243,8 @@
 }
 
 .form-diet__bonus {
+  display: grid;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -203,6 +253,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 1220px;
   }
 }
@@ -216,6 +268,11 @@
 .form-diet__notice {
   @media (min-width: @tablet-width) {
     display: flex;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
   }
 }
 
@@ -237,6 +294,8 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 81px;
+    padding: 13px 188px;
+    width: 570px;
   }
 }
 
