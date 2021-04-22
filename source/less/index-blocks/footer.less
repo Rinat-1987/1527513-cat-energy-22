@@ -15,13 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    padding: 36px 81px 21px 36px;
-    width: 470px;
-    height: 120px;
-    left: 80px;
-    bottom: 250px;
-    z-index: 3;
+    display: none;
   }
 }
 
@@ -113,6 +107,20 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     border-bottom: none;
+  }
+}
+
+.footer-contacts__list::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    padding: 36px 81px 21px 36px;
+    margin-right: 550px;
+    width: 470px;
+    height: 120px;
+    bottom: 250px;
+    background-image: url(../img/footer-contacts-after.png);
+    z-index: 3;
   }
 }
 
