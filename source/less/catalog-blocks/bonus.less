@@ -1,6 +1,12 @@
 .bonus {
-  margin: 35px auto;
+  margin: 0 auto;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    padding: 0 30px;
+    width: 708px;
+  }
 }
 
 .bonus__text {
@@ -12,9 +18,21 @@
   font-family: Arial;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   background-image: url(../img/bonus-background.jpg);
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-left: 150px;
+    margin-bottom: 76px;
+    width: 708px;
+    background-size: 708px 200px;
+    background-image: url(../img/bonus-background-tablet.png);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .bonus__text::after {

@@ -33,6 +33,12 @@
     height: 430px;
     background-color: @grey;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+    width: 245px;
+    height: 429px;
+  }
 }
 
 .catalog__link--img {
@@ -65,9 +71,14 @@
   color: @radio;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 154px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
   }
 }
 
@@ -76,7 +87,7 @@
   grid-row: 1/2;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 90px 0;
+    padding-top: 30px;
   }
 }
 
@@ -101,6 +112,10 @@
     padding-bottom: 9px;
     width: 247px;
     border-bottom: 1px solid @input-special;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 166px;
   }
 }
 
@@ -131,6 +146,10 @@
     margin-left: 35px;
     width: 240px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
 
 .catalog__item--additional {
@@ -143,6 +162,11 @@
     height: 407px;
     border: 1px solid @grey;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 410px;
+  }
 }
 
 .catalog__title-card--bonus {
@@ -153,11 +177,19 @@
   background-image: url(../img/icon_plus.png);
   background-position: top center;
   background-repeat: no-repeat;
+  color: @footer;
 
   @media (min-width: @tablet-width) {
     margin-top: 50px;
     padding-top: 120px;
+    font-size: 20px;
+    line-height: 22px;
     background-size: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    width: 134px;
   }
 }
 
@@ -166,6 +198,19 @@
   font-family: Arial;
   font-size: 12px;
   line-height: 16px;
+  color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    margin: 30px auto 115px;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 100px;
+  }
 }
 
 .catalog__button--all {
@@ -173,4 +218,14 @@
   background-color: @grey;
   color: @grey-black;
   white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    padding: 10px 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 50px;
+    width: 168px;
+  }
 }
