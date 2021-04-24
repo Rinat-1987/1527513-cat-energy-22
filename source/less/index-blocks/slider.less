@@ -3,15 +3,25 @@
   border: none;
   background-color: @background;
 
+  @media (min-width: @tablet-width) {
+    height: 460px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 640px;
+    width: 690px;
   }
 }
 
 .slider__img {
   @media (min-width: @tablet-width) {
+    margin-top: -220px;
     width: 708px;
     height: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    height: 656px;
   }
 }
 
