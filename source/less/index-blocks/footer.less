@@ -1,12 +1,17 @@
 .footer__wrapper {
   margin: 0 auto;
+}
+
+.footer__wrapper--grey {
   background-color: @grey;
 }
 
-.footer__container {
-  position: relative;
-  margin: 0 auto;
-  width: 1220px;
+@media (min-width: @desktop-width) {
+  .footer__container {
+    position: relative;
+    margin: 0 auto;
+    width: 1220px;
+  }
 }
 
 .footer__cooperation {
@@ -19,27 +24,13 @@
 
   @media (min-width: @tablet-width) {
     width: 630px;
-    background-color: @white;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 150px;
-    top: 100px;
+    top: 75px;
     width: 470px;
     height: 120px;
-  }
-}
-
-.footer__wrapper iframe {
-  width: 100%;
-  z-index: 2;
-}
-
-.footer__cooperation--form {
-  background-color: @grey;
-
-  @media (min-width: @desktop-width) {
     background-color: @white;
   }
 }
@@ -70,6 +61,11 @@
     width: 159px;
     font-size: 16px;
   }
+}
+
+.footer__wrap {
+  margin: 0 auto;
+  background-color: @grey;
 }
 
 .footer-contacts {

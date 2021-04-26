@@ -1,4 +1,5 @@
 .catalog-optional {
+  position: relative;
   margin: 0 auto;
   padding: 0 20px;
   width: 282px;
@@ -18,11 +19,12 @@
   .catalog-optional::after {
     position: absolute;
     content: "";
-    right: 50px;
-    top: 1500px;
+    right: 150px;
+    top: 100px;
+    left: 970px;
     width: 245px;
     height: 289px;
-    background-image: url(../../img/bonus-after-background.png);
+    background-image: url(../img/bonus-after-background.png);
     background-repeat: no-repeat;
     background-size: 245px 289px;
   }
@@ -56,7 +58,6 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    height: 556px;
     border: 1px solid @input-special;
   }
 
@@ -65,7 +66,6 @@
     padding: 0;
     margin-bottom: 100px;
     width: 900px;
-    height: 350px;
     border: none;
   }
 }
@@ -83,7 +83,8 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     flex-wrap: nowrap;
-    padding: 20px 10px;
+    padding: 5px;
+    align-items: baseline;
   }
 }
 
@@ -144,8 +145,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 26px 0;
+    margin: 0;
+    padding: 13px 26px;
     width: 200px;
-    height: 40px;
   }
 }
