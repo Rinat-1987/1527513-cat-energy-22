@@ -4,11 +4,11 @@
   background-color: @background;
 
   @media (min-width: @tablet-width) {
-    height: 460px;
+    height: 500px;
   }
 
   @media (min-width: @desktop-width) {
-    height: auto;
+    height: 430px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 .slider__img {
   @media (min-width: @tablet-width) {
-    margin-top: -220px;
+    margin-top: -240px;
     width: 708px;
     height: 620px;
   }
@@ -38,6 +38,14 @@
   justify-content: space-between;
   margin: 27px auto 31px;
   width: 228px;
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 600px;
+  }
 }
 
 .slider__toggle {
@@ -54,6 +62,15 @@
 
 .slider__line {
   width: 84px;
-  height: 14px;
+  height: 23px;
   background-image: url(../img/slider.svg);
+  background-position: top 5px right 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+    height: 40px;
+    background-image: url(../img/slider-tablet.svg);
+    background-position: top 0 right 0;
+  }
 }

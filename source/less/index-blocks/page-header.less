@@ -1,8 +1,6 @@
 .page-header {
   display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width)  {
     justify-content: space-between;
@@ -12,6 +10,14 @@
   @media (min-width: @desktop-width)  {
     width: 1220px;
   }
+}
+
+.page-header__link {
+  padding: 10px 20px;
+}
+
+.page-header__link--closed {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,4 +41,30 @@
   @media (min-width: @desktop-width) {
     display: block;
   }
+}
+
+.page-header__toggle {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.page-header__toggle::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  top: 23px;
+  left: 270px;
+  background-image: url(../img/menu-toggle.svg);
+  background-repeat: no-repeat;
+	background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle--closed {
+  display: none;
 }

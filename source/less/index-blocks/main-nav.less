@@ -1,5 +1,11 @@
+.main-nav--closed {
+  display: none;
+}
+
 .main-nav__wrapper {
-  padding-top: 15px;
+  padding: 0;
+  margin: 0;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     min-width: 440px;
@@ -7,28 +13,5 @@
 
   @media (min-width: @desktop-width) {
     min-width: 500px;
-  }
-}
-
-.main-nav__toggle {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.main-nav__toggle::after {
-  display: none;
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 20px;
-  top: 30px;
-  left: 250px;
-  background-image: url(../img/menu-toggle.svg);
-  background-repeat: no-repeat;
-	background-position: 0 0;
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
