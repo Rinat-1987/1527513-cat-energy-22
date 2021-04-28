@@ -1,11 +1,23 @@
 .main-nav--closed {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  position: relative;
+  left: 0;
+  bottom: 0px;
 }
 
 .main-nav__wrapper {
   padding: 0;
   margin: 0;
-  width: 320px;
 
   @media (min-width: @tablet-width) {
     min-width: 440px;
