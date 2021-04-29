@@ -42,7 +42,6 @@
 .example-cat__wrapper-content {
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
     background-color: @background;
   }
 }
@@ -57,7 +56,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
     width: 570px;
   }
 }
