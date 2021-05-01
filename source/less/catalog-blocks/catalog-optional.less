@@ -1,3 +1,11 @@
+.catalog-optional-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
 .catalog-optional {
   position: relative;
   margin: 0 auto;
@@ -12,21 +20,6 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .catalog-optional::after {
-    position: absolute;
-    content: "";
-    right: 150px;
-    top: 100px;
-    left: 970px;
-    width: 245px;
-    height: 289px;
-    background-image: url(../img/bonus-after-background.png);
-    background-repeat: no-repeat;
-    background-size: 245px 289px;
   }
 }
 
