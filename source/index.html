@@ -262,8 +262,14 @@
           </div>
           <div class="slider">
             <div class="slider__container">
-              <img class="slider__img" src="img/example-cat-before-mobile.png" width="311" height="232" srcset="img/example-cat-before-mobile@2x.png 2x" alt="Кот до программы">
-              <img class="slider__img visually-hidden" src="img/example-cat-after-mobile.png" width="251" height="240" srcset="img/example-cat-after-mobile@2x.png 2x" alt="Кот после программы">
+              <picture>
+                <sourse media="(min-width: 768px)" srcset="img/example-cat-before-tablet.png 1x, img/example-cat-before-tablet@2x.png 2x">
+                <img class="slider__img" src="img/example-cat-before-mobile.png" width="311" height="232" srcset="img/example-cat-before-mobile@2x.png 2x" alt="Кот до программы">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/example-cat-after-tablet.png 1x, img/example-cat-after-tablet@2x.png 2x">
+                <img class="slider__img slider__img--hidden" src="img/example-cat-after-mobile.png" width="251" height="240" srcset="img/example-cat-after-mobile@2x.png 2x" alt="Кот после программы">
+              </picture>
               <div class="slider__roller">
                 <button class="slider__toggle" type="button">Было</button>
                 <div class="slider__line"></div>
