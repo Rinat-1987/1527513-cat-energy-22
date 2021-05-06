@@ -24,6 +24,7 @@
 }
 
 .catalog-optional__title {
+  position: relative;
   margin: 0;
   padding: 25px 0 36px;
   font-weight: normal;
@@ -84,7 +85,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: initial;
+    justify-content: unset;
     flex-wrap: nowrap;
     margin: 0;
     padding: 5px;
@@ -122,10 +123,8 @@
   justify-content: space-between;
 
   @media (min-width: @desktop-width) {
-    justify-content: initial;
     align-items: center;
-    margin: 0;
-    padding: 0;
+
   }
 }
 
