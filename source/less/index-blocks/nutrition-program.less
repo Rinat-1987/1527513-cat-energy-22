@@ -113,6 +113,28 @@
   }
 }
 
+.nutrition-program__link {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  float: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 50px;
+  }
+}
+
+.nutrition-program__link svg {
+  padding-left: 25px;
+}
+
 .nutrition-program__content--slim {
   @media (min-width: @tablet-width) {
     width: 377px;
@@ -122,13 +144,6 @@
 .nutrition-program__content--pro {
   @media (min-width: @tablet-width) {
     width: 342px;
-  }
-}
-
-.nutrition-program__link svg {
-  @media (min-width: @tablet-width) {
-    width: 165px;
-    height: 38px;
   }
 }
 
