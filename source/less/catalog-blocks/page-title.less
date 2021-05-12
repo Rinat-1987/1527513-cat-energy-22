@@ -1,7 +1,22 @@
 .page-title {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 27px 20px 41px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  border-bottom: 1px solid @border;
+
+  @media (min-width: @tablet-width)  {
+    margin-bottom: 100px;
+    padding-left: 30px;
+    width: 710px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

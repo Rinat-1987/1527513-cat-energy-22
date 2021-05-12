@@ -1,5 +1,15 @@
 .bonus {
-  margin: 35px 20px;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .bonus__text {
@@ -11,9 +21,37 @@
   font-family: Arial;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  background-image: url(../img/bonus-background.jpg);
+  background-image: url(../img/bonus-background-mobile.png);
+  background-size: 280px 289px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bonus-background-mobile@2x.png);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    margin-bottom: 76px;
+    width: 708px;
+    background-size: 708px 200px;
+    background-image: url(../img/bonus-background-tablet.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bonus-background-tablet@2x.png);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 185px;
+    margin-top: -20px;
+    margin-left: 75px;
+    width: 245px;
+    height: 100px;
+    background-image: url(../img/bonus-background-desktop.png);
+    background-size: 245px 289px;
+  }
 }
 
 .bonus__text::after {
@@ -24,4 +62,8 @@
   top: 60px;
   left: 100px;
   background-image: url(../img/icon_bonus.png);
+
+  @media (min-width: @desktop-width) {
+    left: 80px;
+  }
 }
