@@ -104,7 +104,6 @@
 }
 
 .footer-contacts {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: @grey;
@@ -124,6 +123,7 @@
 }
 
 .footer-contacts__logo {
+  position: relative;
   margin: 0 auto;
   padding: 39px 96px 35px;
   width: 128px;
@@ -181,11 +181,14 @@
 .footer-contacts__copyright {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0 auto;
   padding: 28px 19px 12px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     padding: 0;
+    width: auto;
   }
 }
 
@@ -194,6 +197,10 @@
   font-size: 16px;
   text-decoration: none;
   color: @grey-black;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .footer-contacts__copyright-logo {
