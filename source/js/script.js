@@ -1,5 +1,5 @@
 var toggle = document.querySelector('.page-header__toggle');
-var pageHeaderLink = document.querySelector('.page-header__link');
+var pageHeaderLink = document.querySelector('.page-header__logo-mobile');
 var mainNav = document.querySelector('.main-nav');
 var listCross = document.querySelector('.site-list__cross');
 
