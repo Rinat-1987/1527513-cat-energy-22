@@ -74,6 +74,7 @@
   padding-bottom: 30px;
 
   @media (min-width: @desktop-width) {
+    margin-right: 55px;
     width: 570px;
   }
 }
@@ -134,7 +135,7 @@
     margin: 0;
     margin-bottom: 50px;
     padding-bottom: 0;
-    width: 570px;
+    width: 630px;
     min-height: 195px;
     border: 1px solid @input;
   }
@@ -159,6 +160,7 @@
 }
 
 .form-diet__legend--contacts {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -168,12 +170,92 @@
   }
 }
 
+.form-diet__legend--contacts::before {
+  position: absolute;
+  content: "";
+  width: 28vw;
+  height: 2px;
+  left: 210px;
+  top: 45px;
+  background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    width: 19vw;
+    left: 555px;
+    top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48vw;
+  }
+}
+
+.form-diet__legend--contacts::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 5vw;
+    height: 2px;
+    right: 553px;
+    top: 50px;
+    background-color: @green;
+  }
+}
+
 .form-diet__legend--comment {
+  position: relative;
   padding-top: 40px;
 }
 
+.form-diet__legend--comment::before {
+  position: absolute;
+  content: "";
+  width: 47vw;
+  height: 2px;
+  left: 150px;
+  top: 54px;
+  background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    width: 62vw;
+    left: 204px;
+    top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 72vw;
+  }
+}
+
+.form-diet__legend--comment::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 5vw;
+    height: 2px;
+    right: 669px;
+    top: 58px;
+    background-color: @green;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 1260px;
+  }
+}
+
+.form-diet__fieldset--radio {
+  padding-left: 55px;
+  width: 220px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+}
+
 .form-diet__label--radio {
+  position: relative;
   color: @radio;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -183,6 +265,24 @@
 
 .form-diet__label--radio input {
   display: none;
+}
+
+.form-diet__label--radio-on::after,
+.form-diet__label--radio-off::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  top: -5px;
+}
+
+.form-diet__label--radio-on::after {
+  background-image: url(../img/radio-on.svg);
+}
+
+.form-diet__label--radio-off::after {
+  background-image: url(../img/radio-off.svg);
 }
 
 .form-diet__contacts {
@@ -216,6 +316,7 @@
 }
 
 .form-diet__legend {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
@@ -249,8 +350,49 @@
   }
 }
 
+.form-diet__legend--additional {
+  position: relative;
+}
+
+.form-diet__legend--additional::before {
+  position: absolute;
+  content: "";
+  width: 43vw;
+  height: 2px;
+  left: 162px;
+  top: 15px;
+  background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    width: 53vw;
+    left: 237px;
+    top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 72vw;
+  }
+}
+
+.form-diet__legend--additional::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 5vw;
+    height: 2px;
+    right: 716px;
+    top: 21px;
+    background-color: @green;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 1290px;
+  }
+}
+
 .form-diet__bonus {
   display: grid;
+  padding-left: 55px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -264,6 +406,29 @@
     padding-bottom: 15px;
     width: 1220px;
   }
+}
+
+.form-diet__label--checkbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-diet__label--checkbox-on::before,
+.form-diet__label--checkbox-off::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+}
+
+.form-diet__label--checkbox-on::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.form-diet__label--checkbox-off::before {
+  background-image: url(../img/checkbox-off.svg);
 }
 
 .form-diet__bonus .form-diet__label {
@@ -292,7 +457,7 @@
 .form-diet__button {
   margin: 0;
   padding: 0;
-  padding: 7px 73px;
+  padding: 7px;
   width: 280px;
   min-height: 40px;
   font-size: 16px;
