@@ -17,6 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 32px;
 
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
@@ -28,7 +29,7 @@
 .nutrition-program__item {
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   width: 280px;
   background-color: @grey;
   list-style: none;
@@ -66,12 +67,18 @@
   }
 }
 
+.nutrition-program__subject--slim {
+  padding-left: 5px;
+  padding-top: 7px;
+}
+
 .nutrition-program__subject--slim::before {
   position: absolute;
   content: "";
   width: 50px;
   height: 53px;
-  left: 15px;
+  left: 21px;
+  top: -2px;
   background-image: url(../img/program-slim.svg);
   background-repeat: no-repeat;
   background-position: left top;
@@ -93,7 +100,8 @@
 }
 
 .nutrition-program__content {
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 18px;
   margin-right: 33px;
   padding-bottom: 23px;
   border-bottom: 1px solid @bottom;
@@ -115,11 +123,14 @@
 }
 
 .nutrition-program__link {
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 18px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   float: left;
+  text-decoration: none;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -133,7 +144,7 @@
 }
 
 .nutrition-program__link svg {
-  padding-left: 25px;
+  padding-left: 12px;
 }
 
 .nutrition-program__content--slim {
@@ -150,6 +161,7 @@
 
 .nutrition-program__subject--pro {
   margin-left: 40px;
+  padding-top: 7px;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
@@ -166,6 +178,7 @@
   width: 67px;
   height: 50px;
   left: -30px;
+  top: 0;
   background-image: url(../img/program-pro.svg);
   background-repeat: no-repeat;
   background-position: left top;

@@ -65,7 +65,7 @@
 }
 
 .example-cat__text {
-  margin-top: 33px;
+  margin-top: 37px;
   font-family: Arial;
   text-align: left;
   color: @grey-black;
@@ -96,6 +96,8 @@
 .example-cat__advantages-container {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 0px;
+  margin-left: 7px;
 }
 
 .example-cat__advantages-container-first::after {
@@ -103,8 +105,8 @@
   position: absolute;
   width: 124px;
   height: 56px;
-  left: 2px;
-  top: -11px;
+  left: -1px;
+  top: -14px;
   background-image: url(../img/polyline.png);
 
   @media (min-width: @tablet-width) {
@@ -117,6 +119,11 @@
     background-image: url(../img/polyline-tablet-first.png);
     background-repeat: no-repeat;
   }
+}
+
+.example-cat__advantages-container-second {
+  margin-top: 0px;
+  margin-left: 38px;
 }
 
 .example-cat__advantages-container-second .example-cat__term {
@@ -132,8 +139,8 @@
   position: absolute;
   width: 124px;
   height: 56px;
-  left: 147px;
-  top: -12px;
+  left: 154px;
+  top: -15px;
   background-image: url(../img/polyline.png);
 
   @media (min-width: @tablet-width) {
@@ -149,7 +156,8 @@
 }
 
 .example-cat__term {
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-left: -9px;
   width: 60px;
   font-family: Arial;
   font-size: 12px;
@@ -183,6 +191,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: -7px;
+  margin-left: -3px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
