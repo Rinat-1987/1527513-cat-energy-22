@@ -10,8 +10,8 @@
 }
 
 .form-diet__title {
-  margin: 27px auto 37px;
-  width: 280px;
+  margin: 27px 0 37px;
+  padding: 0 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -31,9 +31,9 @@
 }
 
 .form-diet__text {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 39px;
-  width: 280px;
+  padding: 0 20px;
   text-align: left;
   text-transform: uppercase;
 
@@ -60,8 +60,6 @@
 .form-diet__fieldset {
   display: grid;
   margin: 0 auto;
-  width: 280px;
-  padding: 0;
   border: none;
   text-transform: uppercase;
 
@@ -150,7 +148,11 @@
 }
 
 .form-diet__fieldset--contacts {
+  position: relative;
   display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .form-diet__fieldset--comment {
@@ -160,9 +162,12 @@
 }
 
 .form-diet__legend--contacts {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 20px;
+  width: min-content;
+  vertical-align: baseline;
+  background-color: @white;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 50px;
@@ -170,14 +175,15 @@
   }
 }
 
-.form-diet__legend--contacts::before {
+.form-diet__fieldset--contacts::after {
   position: absolute;
   content: "";
-  width: 28vw;
+  width: auto;
   height: 2px;
-  left: 210px;
-  top: 45px;
+  left: 120px;
+  top: -61px;
   background-color: @green;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     width: 19vw;
@@ -245,7 +251,6 @@
 
 .form-diet__fieldset--radio {
   padding-left: 55px;
-  width: 220px;
 
   @media (min-width: @tablet-width) {
     width: 630px;
