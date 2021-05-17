@@ -4,6 +4,7 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @menu;
+    padding-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,17 +35,18 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    padding-top: 5px;
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .diet-process__list {
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,6 +72,10 @@
 
 .diet-process__item--icon-first {
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 117px;
+  }
 }
 
 .diet-process__item--icon-second {
@@ -110,24 +116,28 @@
 .diet-process__item--icon-first::before {
   @media (min-width: @tablet-width) {
     content: "1";
+    right: 58px;
   }
 }
 
 .diet-process__item--icon-second::before {
   @media (min-width: @tablet-width) {
     content: "2";
+    right: 81px;
   }
 }
 
 .diet-process__item--icon-third::before {
   @media (min-width: @tablet-width) {
     content: "3";
+    right: 63px;
   }
 }
 
 .diet-process__item--icon-fourth::before {
   @media (min-width: @tablet-width) {
     content: "4";
+    right: 78px;
   }
 }
 
@@ -149,6 +159,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    left: -41px;
     background-image: url(../img/diet-process-1-tablet.png);
   }
 }
@@ -159,6 +170,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    left: -56px;
     background-image: url(../img/diet-process-2-tablet.png);
   }
 }
@@ -169,6 +181,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    left: -42px;
     background-image: url(../img/diet-process-3-tablet.png);
   }
 }
@@ -179,6 +192,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    left: -55px;
     background-image: url(../img/diet-process-4-tablet.png);
   }
 }
@@ -188,10 +202,31 @@
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
-    margin-left: -80px;
-    padding-top: 110px;
+    margin-left: -81px;
+    padding-top: 96px;
     width: 201px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-process__content--second {
+    margin-left: -96px;
+    padding-top: 96px;
+    width: 233px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-process__content--third {
+    width: 205px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-process__content--fourth {
+    margin-left: -95px;
+    width: 254px;
   }
 }

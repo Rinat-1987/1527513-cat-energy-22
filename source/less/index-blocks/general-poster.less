@@ -23,8 +23,8 @@
     background-repeat: no-repeat;
     background-size: 100% 694px;
     top: -110px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: calc(100vw - 50%);
     height: 694px;
     z-index: 1;
 
@@ -41,7 +41,8 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    padding-left: 87px;
+    padding-left: 74px;
+    margin-top: 49px;
     margin-bottom: 590px;
     width: 610px;
   }
@@ -66,7 +67,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-bottom: 41px;
+    margin-bottom: 7px;
     width: 414px;
     font-size: 60px;
     line-height: 60px;
@@ -81,8 +82,8 @@
     content: "";
     width: 709px;
     height: 609px;
-    top: 225px;
-    left: 16px;
+    top: 201px;
+    left: -14px;
     background-image: url(../img/index-product-tablet.jpg);
     background-repeat: no-repeat;
     background-size: 709px 609px;
@@ -136,8 +137,9 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     margin-left: 100px;
-    padding: 14px 16px;
-    top: 300px;
+    padding: 16px 0px;
+    top: 231px;
+    left: -32px;
     width: 244px;
     font-size: 20px;
     line-height: 20px;

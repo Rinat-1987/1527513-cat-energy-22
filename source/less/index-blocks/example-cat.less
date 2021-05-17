@@ -2,10 +2,10 @@
   background-color: @background;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 15px;
+  padding-bottom: 4px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    padding: 0;
     background-color: @white;
   }
 }
@@ -52,7 +52,7 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 300px;
+    margin-bottom: 265px;
     width: 708px;
   }
 
@@ -71,6 +71,8 @@
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 62px;
+    width: 700px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -88,7 +90,7 @@
   margin-top: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 40px;
+    padding-top: 30px;
     width: 366px;
   }
 }
@@ -97,7 +99,7 @@
   display: flex;
   flex-direction: column-reverse;
   margin-top: 0px;
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 .example-cat__advantages-container-first::after {
@@ -114,8 +116,8 @@
     position: absolute;
     width: 162px;
     height: 72px;
-    left: 1px;
-    top: 24px;
+    left: -1px;
+    top: 15px;
     background-image: url(../img/polyline-tablet-first.png);
     background-repeat: no-repeat;
   }
@@ -148,8 +150,8 @@
     position: absolute;
     width: 162px;
     height: 72px;
-    left: 186px;
-    top: 23px;
+    left: 201px;
+    top: 14px;
     background-image: url(../img/polyline-tablet-second.png);
     background-repeat: no-repeat;
   }
@@ -165,6 +167,7 @@
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 11px;
     width: auto;
     font-size: 14px;
     line-height: 14px;
@@ -178,6 +181,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-left: 6px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -192,7 +196,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: -7px;
-  margin-left: -3px;
+  margin-left: -1px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
