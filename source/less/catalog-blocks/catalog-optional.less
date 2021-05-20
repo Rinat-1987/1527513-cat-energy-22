@@ -25,8 +25,8 @@
 
 .catalog-optional__title {
   position: relative;
+  padding: 25px 36px 34px 0;
   margin: 0;
-  padding: 25px 0 36px;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
@@ -46,14 +46,15 @@
   }
 }
 
-.catalog-optional__title::after {
+.catalog-optional::after {
   content: "";
   position: absolute;
-  width: 10px;
+  width: auto;
   height: 2px;
-  background-color: @green;
   left: 265px;
-  top: 37px;
+  right: 0;
+  top: 40px;
+  background-color: @green;
 
   @media (min-width: @tablet-width) {
     width: 44vw;
@@ -84,6 +85,7 @@
 
 .catalog-optional__list {
   padding: 0;
+  margin-top: -4px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -101,7 +103,7 @@
 }
 
 .catalog-optional__item {
-  padding-bottom: 40px;
+  padding-bottom: 13px;
   border-bottom: 1px solid @border;
 
   @media (min-width: @tablet-width) {
@@ -189,6 +191,7 @@
 
 .catalog-optional__property {
   margin-bottom: 15px;
+  margin-right: 3px;
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
@@ -197,7 +200,10 @@
 }
 
 .catalog-optional__button {
-  padding: 10px 115px;
+  display: flex;
+  text-align: center;
+  margin-top: -18px;
+  padding: 15px 109px 7px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
