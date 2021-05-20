@@ -1,29 +1,7 @@
 .bonus {
+  position: relative;
   margin: 0 auto;
   width: 280px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 60px;
-    width: 708px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    width: 245px;
-  }
-}
-
-.bonus__text {
-  position: relative;
-  margin-top: 46px;
-  padding-top: 186px;
-  margin-right: 0;
-  padding-bottom: 61px;
-  width: 280px;
-  color: @white;
-  font-family: Arial;
-  font-size: 16px;
-  line-height: 20px;
   background-image: url(../img/bonus-background-mobile.png);
   background-size: 280px 289px;
   background-repeat: no-repeat;
@@ -33,42 +11,75 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 70px;
-    margin-bottom: 76px;
+    display: flex;
+    flex-direction: row;
+    margin: 70px 27px 65px;
     width: 708px;
+    min-height: 200px;
+    align-items: center;
     background-size: 708px 200px;
     background-image: url(../img/bonus-background-tablet.png);
-    text-align: left;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/bonus-background-tablet@2x.png);
-    }
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 0;
-    padding-top: 185px;
-    margin-top: -20px;
-    margin-left: 75px;
+    margin-top: 54px;
     width: 245px;
-    height: 100px;
+    min-height: 100px;
     background-image: url(../img/bonus-background-desktop.png);
     background-size: 245px 289px;
     text-align: center;
   }
 }
 
-.bonus__text::after {
+.bonus__text {
+  margin-top: 46px;
+  padding-top: 186px;
+  margin-right: 0;
+  padding-bottom: 61px;
+  width: 280px;
+  color: @white;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 46px;
+    margin-left: 425px;
+    margin-right: 0;
+    padding-top: 26px;
+    padding-bottom: 61px;
+    width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 116px;
+    margin-left: 40px;
+    padding-top: 26px;
+    padding-bottom: 61px;
+    width: 161px;
+    text-align: center;
+  }
+}
+
+.bonus::after {
   position: absolute;
   content: "";
   width: 78px;
   height: 80px;
-  top: 60px;
+  top: 58px;
   left: 100px;
   background-image: url(../img/icon_bonus.png);
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    top: 58px;
     left: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 84px;
+    top: 57px;
   }
 }
