@@ -1,13 +1,13 @@
 .general-poster {
   position: relative;
   margin: 0;
-  background-image: url(../img/index-background-mobile.jpg);
+  background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
-	background-position: top 0;
+  background-position: top 0;
   background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/index-background-mobile@2x.jpg);
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
@@ -19,17 +19,17 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     content: "";
-    background-image: url(../img/index-background-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 694px;
     top: -176px;
     right: 0;
     width: calc(100vw - 50%);
     height: 694px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 694px;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/index-background-desktop@2x.jpg);
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
@@ -58,12 +58,12 @@
 .general-poster__title {
   margin: 0;
   padding-top: 27px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: normal;
   font-style: normal;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 2;
 
   @media (min-width: @tablet-width) {
@@ -85,13 +85,13 @@
     height: 609px;
     top: 201px;
     left: -14px;
-    background-image: url(../img/index-product-tablet.jpg);
+    background-image: url("../img/index-product-tablet.jpg");
     background-repeat: no-repeat;
     background-size: 709px 609px;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/index-product-tablet@2x.png);
+      background-image: url("../img/index-product-tablet@2x.png");
     }
   }
 
@@ -100,12 +100,12 @@
     height: 499px;
     top: -34px;
     left: 526px;
-    background-image: url(../img/index-product-desktop.png);
+    background-image: url("../img/index-product-desktop.png");
     background-size: 552px 499px;
     z-index: 2;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/index-product-desktop@2x.png);
+      background-image: url("../img/index-product-desktop@2x.png");
     }
   }
 }
@@ -115,7 +115,7 @@
   padding-top: 13px;
   padding-right: 3px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   z-index: 2;
 
@@ -129,7 +129,6 @@
 
 .general-poster__link {
   margin: 0 auto;
-  padding: 0;
   padding: 9px 73px;
   width: 280px;
   text-transform: uppercase;
@@ -138,7 +137,7 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     margin-left: 100px;
-    padding: 16px 0px;
+    padding: 16px 0;
     top: 231px;
     left: -32px;
     width: 244px;
