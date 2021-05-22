@@ -60,9 +60,13 @@
 
 .slider__toggle {
   margin-left: 17px;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: underline dotted;
+  text-decoration-color: @slider;
+  text-underline-position: under;
   border: none;
   background-color: @background;
 
@@ -71,6 +75,15 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.slider__toggle:hover {
+  text-decoration: underline solid;
+  text-decoration-color: @slider-hover;
+}
+
+.slider__toggle:active {
+  text-decoration: none;
 }
 
 .slider__line {
