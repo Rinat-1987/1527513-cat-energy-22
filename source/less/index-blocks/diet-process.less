@@ -1,10 +1,10 @@
 .diet-process {
   margin-top: -6px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @menu;
-    padding-bottom: 46px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,6 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 38px;
     padding-top: 32px;
   }
 }
@@ -161,8 +162,8 @@
   content: "";
   width: 60px;
   height: 60px;
-  left: -38px;
-  top: 0;
+  left: -40px;
+  top: -1px;
 }
 
 .diet-process__item--icon-first::after {
@@ -214,7 +215,7 @@
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
-    margin-left: -81px;
+    margin-left: -82px;
     padding-top: 96px;
     width: 201px;
     font-size: 16px;
@@ -224,8 +225,8 @@
 
 @media (min-width: @tablet-width) {
   .diet-process__content--second {
-    margin-left: -96px;
-    padding-top: 96px;
+    margin-left: -95px;
+    padding-top: 95px;
     width: 233px;
   }
 }
@@ -236,9 +237,13 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .diet-process__content--fourth {
+.diet-process__content--fourth {
+  @media (min-width: @tablet-width) {
     margin-left: -95px;
     width: 254px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -97px;
   }
 }
