@@ -16,7 +16,7 @@
   </head>
   <body class="page-body">
     <header class="page-header page-header--border">
-      <a class="page-header__link" href="index.html">
+      <a class="page-header__link" href="index.html" aria-label="Логотип Кэт Энерджи">
         <svg class="page-header__logo-mobile page-header__nojs" width="191" height="38">
           <use xlink:href="img/sprite.svg#logo-mobile"></use>
         </svg>
@@ -32,7 +32,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--svg">
-              <a class="site-list__link site-list__link--svg" href="index.html">
+              <a class="site-list__link site-list__link--svg" href="index.html" aria-label="Логотип Кэт Энерджи">
                 <svg class="site-list__logo" width="191" height="38">
                   <use xlink:href="img/sprite.svg#logo-mobile"></use>
                 </svg>
@@ -63,25 +63,28 @@
             <div class="form-diet__column">
               <fieldset class="form-diet__fieldset form-diet__fieldset--column">
                 <label class="form-diet__label"> Имя:<sup>*</sup>
-                  <input type="text" name="name" placeholder="Барсик" required>
+                  <input type="text" name="name" placeholder="Барсик" required aria-label="Напишите имя кота">
                 </label>
                 <label class="form-diet__label">Вес (Кг):<sup>*</sup>
-                  <input type="text" name="weight" placeholder="7" required>
+                  <input type="text" name="weight" placeholder="7" required aria-label="Укажите вес кота">
                 </label>
                 <label class="form-diet__label">Возраст (лет):
-                  <input type="text" name="age" placeholder="7">
+                  <input type="text" name="age" placeholder="7" aria-label="Укажите возраст кота">
                 </label>
               </fieldset>
               <div class="form-diet__container">
                 <fieldset class="form-diet__fieldset form-diet__fieldset--radio">
-                  <label class="form-diet__label form-diet__label--radio form-diet__label--radio-on">
-                    <input type="radio" name="weight" checked>Похудение
+                  <label class="form-diet__label form-diet__label--radio">
+                    <input type="radio" name="weight" checked aria-label="Выбрать программу похудение">Похудение
+                    <span class="form-diet__span-radio"></span>
                   </label>
-                  <label class="form-diet__label form-diet__label--radio form-diet__label--radio-off">
-                    <input type="radio" name="weight">Набор массы
+                  <label class="form-diet__label form-diet__label--radio">
+                    <input type="radio" name="weight" aria-label="Выбрать программу набора массы">Набор массы
+                    <span class="form-diet__span-radio"></span>
                   </label>
-                  <label class="form-diet__label form-diet__label--radio form-diet__label--radio-off form-diet__label--radio-border">
-                    <input type="radio" name="weight">Не знаю (нужен ваш совет)
+                  <label class="form-diet__label form-diet__label--radio form-diet__label--radio-border">
+                    <input type="radio" name="weight" aria-label="Затрудняетесь с ответом">Не знаю (нужен ваш совет)
+                    <span class="form-diet__span-radio"></span>
                   </label>
                 </fieldset>
               </div>
@@ -90,33 +93,37 @@
               <legend class="form-diet__legend form-diet__legend--contacts">Контактные&nbsp;данные (владельца кота)</legend>
               <div class="form-diet__contacts">
                 <label class="form-diet__label form-diet__label--color-input form-diet__label--svg-email"> E-mail:<sup>*</sup>
-                  <input type="email" name="name" placeholder="kuklachev@gmail.com" required>
+                  <input type="email" name="name" placeholder="kuklachev@gmail.com" required aria-label="Укажите электронную почту">
                 </label>
                 <label class="form-diet__label form-diet__label--color-input form-diet__label--svg-phone"> Телефон:<sup>*</sup>
-                  <input type="tel" name="name" placeholder="8 (960) 900-60-90" required>
+                  <input type="tel" name="name" placeholder="8 (960) 900-60-90" required aria-label="Укажите телефон">
                 </label>
               </div>
             </fieldset>
             <fieldset class="form-diet__fieldset form-diet__fieldset--comment">
               <legend class="form-diet__legend form-diet__legend--comment">Комментарий</legend>
               <label class="form-diet__label">
-                <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите подробно о повадках кота"></textarea>
               </label>
             </fieldset>
             <fieldset class="form-diet__fieldset form-diet__fieldset--checkbox">
               <legend class="form-diet__legend form-diet__legend--checkbox">Дополнительно</legend>
               <div class="form-diet__bonus">
-                <label class="form-diet__label form-diet__label--checkbox form-diet__label--checkbox-on">
-                  <input type="checkbox" name="sweetener" checked>Сахарозаменитель
+                <label class="form-diet__label form-diet__label--checkbox">
+                  <input type="checkbox" name="sweetener" checked aria-label="Заказать">Сахарозаменитель
+                  <span class="form-diet__span-checkbox"></span>
                 </label>
-                <label class="form-diet__label form-diet__label--checkbox form-diet__label--checkbox-off">
-                  <input type="checkbox" name="water">Питьевая вода
+                <label class="form-diet__label form-diet__label--checkbox">
+                  <input type="checkbox" name="water" aria-label="Заказать">Питьевая вода
+                  <span class="form-diet__span-checkbox"></span>
                 </label>
-                <label class="form-diet__label form-diet__label--checkbox form-diet__label--checkbox-off">
-                  <input type="checkbox" name="milk">Молоко
+                <label class="form-diet__label form-diet__label--checkbox">
+                  <input type="checkbox" name="milk" aria-label="Заказать">Молоко
+                  <span class="form-diet__span-checkbox"></span>
                 </label>
-                <label class="form-diet__label form-diet__label--checkbox form-diet__label--checkbox-off form-diet__label--checkbox-last">
-                  <input type="checkbox" name="vitamins">Витамины
+                <label class="form-diet__label form-diet__label--checkbox form-diet__label--checkbox-last">
+                  <input type="checkbox" name="vitamins" aria-label="Заказать">Витамины
+                  <span class="form-diet__span-checkbox"></span>
                 </label>
               </div>
             </fieldset>
@@ -143,14 +150,14 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716014556!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616927621691!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="footer__wrap">
           <section class="footer-contacts">
-            <a class="footer-contacts__logo" href="index.html">
+            <a class="footer-contacts__logo" href="index.html" aria-label="Логотип Кэт Энерджи">
               <svg width="128" height="24">
                 <use xlink:href="img/sprite.svg#footer-logo"></use>
               </svg>
             </a>
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link" href="https://vk.com/htmlacademy" aria-label="Перейти на сайт ВКнтакте">
+                <a class="footer-contacts__link" href="https://vk.com/htmlacademy" aria-label="Перейти на сайт В Контакте">
                   <svg class="footer-contacts__vk" width="23" height="16">
                     <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                   </svg>
@@ -172,8 +179,8 @@
               </li>
             </ul>
             <div class="footer-contacts__copyright">
-              <a class="footer-contacts__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              <a class="footer-contacts__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Cat Energy">
+              <a class="footer-contacts__copyright-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">HTML Academy</a>
+              <a class="footer-contacts__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Кэт Энерджи">
                 <svg width="27" height="34">
                   <use xlink:href="img/sprite.svg#htmlacademy"></use>
                 </svg>

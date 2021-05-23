@@ -313,14 +313,14 @@
   display: none;
 }
 
-.form-diet__label--radio-on::after,
-.form-diet__label--radio-off::after {
+.form-diet__span-radio {
   position: absolute;
   content: "";
   width: 30px;
   height: 30px;
   left: -45px;
   top: -5px;
+  background-image: url("../img/radio-off.svg");
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -331,12 +331,8 @@
   }
 }
 
-.form-diet__label--radio-on::after {
+.form-diet__label--radio input:checked ~ .form-diet__span-radio {
   background-image: url("../img/radio-on.svg");
-}
-
-.form-diet__label--radio-off::after {
-  background-image: url("../img/radio-off.svg");
 }
 
 .form-diet__contacts {
@@ -482,7 +478,7 @@
 
   @media (min-width: @tablet-width) {
     left: -30px;
-    right: 0;
+    right: -29px;
     top: -66px;
   }
 
@@ -526,14 +522,14 @@
   }
 }
 
-.form-diet__label--checkbox-on::before,
-.form-diet__label--checkbox-off::before {
+.form-diet__span-checkbox {
   position: absolute;
   content: "";
   top: -5px;
   left: -47px;
   width: 30px;
   height: 30px;
+  background-image: url("../img/checkbox-off.svg");
 
   @media (min-width: @tablet-width) {
     top: 0;
@@ -548,12 +544,8 @@
   }
 }
 
-.form-diet__label--checkbox-on::before {
+.form-diet__label--checkbox input:checked ~ .form-diet__span-checkbox {
   background-image: url("../img/checkbox-on.svg");
-}
-
-.form-diet__label--checkbox-off::before {
-  background-image: url("../img/checkbox-off.svg");
 }
 
 .form-diet__label--checkbox-last {
