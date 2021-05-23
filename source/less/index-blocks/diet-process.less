@@ -1,11 +1,21 @@
 .diet-process {
-  margin-top: 27px;
-  margin-bottom: 42px;
+  margin-top: -6px;
+  margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @menu;
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    margin-bottom: -66px;
+  }
 }
 
 .diet-process__wrapper {
   margin: 0 auto;
-  width: 279px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -18,7 +28,7 @@
 
 .diet-process__subject {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -26,8 +36,14 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    padding-top: 5px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 38px;
+    padding-top: 32px;
   }
 }
 
@@ -36,66 +52,105 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 33px;
   }
 
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
+    min-width: 1260px;
   }
 }
-
 
 .diet-process__item {
   position: relative;
   padding-left: 40px;
   margin-bottom: 25px;
-  font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   list-style: none;
-  color: @grey-black;
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    width: 245px;
-    height: 280px;
+    width: 230px;
   }
 }
 
 .diet-process__item--icon-first {
+  margin-bottom: 27px;
+
   @media (min-width: @tablet-width) {
-    height: 280px;
-    background-image: url(../img/1.png);
-    background-position: left;
-    background-repeat: no-repeat;
+    margin-bottom: 117px;
   }
 }
 
 .diet-process__item--icon-second {
-  @media (min-width: @tablet-width) {
-    height: 280px;
-    background-image: url(../img/2.png);
-    background-position: left;
-    background-repeat: no-repeat;
+  margin-bottom: 27px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 22px;
   }
 }
 
 .diet-process__item--icon-third {
-  @media (min-width: @tablet-width) {
-    height: 280px;
-    background-image: url(../img/3.png);
-    background-position: left;
-    background-repeat: no-repeat;
+  margin-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 26px;
   }
 }
 
+.diet-process__item--icon-first,
+.diet-process__item--icon-second,
+.diet-process__item--icon-third,
 .diet-process__item--icon-fourth {
+  position: relative;
+}
+
+.diet-process__item--icon-first::before,
+.diet-process__item--icon-second::before,
+.diet-process__item--icon-third::before,
+.diet-process__item--icon-fourth::before {
   @media (min-width: @tablet-width) {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    right: 50px;
+    top: -40px;
+    width: 134px;
     height: 280px;
-    background-image: url(../img/4.png);
-    background-position: left;
-    background-repeat: no-repeat;
+    font-size: 280px;
+    line-height: 280px;
+    color: @grey;
+    z-index: -1;
+  }
+}
+
+.diet-process__item--icon-first::before {
+  @media (min-width: @tablet-width) {
+    content: "1";
+    right: 58px;
+  }
+}
+
+.diet-process__item--icon-second::before {
+  @media (min-width: @tablet-width) {
+    content: "2";
+    right: 81px;
+  }
+}
+
+.diet-process__item--icon-third::before {
+  @media (min-width: @tablet-width) {
+    content: "3";
+    right: 63px;
+  }
+}
+
+.diet-process__item--icon-fourth::before {
+  @media (min-width: @tablet-width) {
+    content: "4";
+    right: 78px;
   }
 }
 
@@ -107,28 +162,88 @@
   content: "";
   width: 60px;
   height: 60px;
-  left: -38px;
-  top: 0;
+  left: -40px;
+  top: -1px;
 }
 
 .diet-process__item--icon-first::after {
-  background-image: url(../img/diet-process-1.png);
+  background-image: url("../img/diet-process-1-mobile.png");
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: -41px;
+    background-image: url("../img/diet-process-1-tablet.png");
+  }
 }
 
 .diet-process__item--icon-second::after {
-  background-image: url(../img/diet-process-2.png);
+  background-image: url("../img/diet-process-2-mobile.png");
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: -56px;
+    background-image: url("../img/diet-process-2-tablet.png");
+  }
 }
 
 .diet-process__item--icon-third::after {
-  background-image: url(../img/diet-process-3.png);
+  background-image: url("../img/diet-process-3-mobile.png");
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: -42px;
+    background-image: url("../img/diet-process-3-tablet.png");
+  }
 }
 
 .diet-process__item--icon-fourth::after {
-  background-image: url(../img/diet-process-4.png);
+  background-image: url("../img/diet-process-4-mobile.png");
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: -55px;
+    background-image: url("../img/diet-process-4-tablet.png");
+  }
 }
 
 .diet-process__content {
+  font-family: "Arial", sans-serif;
+  color: @grey-black;
+
   @media (min-width: @tablet-width) {
-    padding-top: 80px;
+    margin-left: -82px;
+    padding-top: 96px;
+    width: 201px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-process__content--second {
+    margin-left: -95px;
+    padding-top: 95px;
+    width: 233px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-process__content--third {
+    width: 205px;
+  }
+}
+
+.diet-process__content--fourth {
+  @media (min-width: @tablet-width) {
+    margin-left: -95px;
+    width: 254px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -97px;
   }
 }

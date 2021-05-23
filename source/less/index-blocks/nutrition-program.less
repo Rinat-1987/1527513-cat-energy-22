@@ -1,14 +1,15 @@
 .nutrition-program__wrapper {
   margin: 0 auto;
   padding: 0 20px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 30px;
-    max-width: 1220px;
+    width: 1220px;
   }
 }
 
@@ -16,6 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 32px;
 
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
@@ -27,7 +29,7 @@
 .nutrition-program__item {
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   width: 280px;
   background-color: @grey;
   list-style: none;
@@ -35,12 +37,23 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 53px;
+    padding-bottom: 57px;
+    margin-bottom: 32px;
     width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
-    width: 570px;
+    margin-left: 0;
+    width: 567px;
+  }
+}
+
+.nutrition-program__item--pro {
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    margin-left: 84px;
+    width: 567px;
   }
 }
 
@@ -65,38 +78,59 @@
   }
 }
 
+.nutrition-program__subject--slim {
+  padding-left: 10px;
+  padding-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 52px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 41px;
+    padding-left: 19px;
+    padding-bottom: 24px;
+  }
+}
+
 .nutrition-program__subject--slim::before {
   position: absolute;
   content: "";
   width: 50px;
   height: 53px;
-  left: 15px;
-  background-image: url(../img/program-slim.svg);
+  left: 21px;
+  top: -2px;
+  background-image: url("../img/program-slim-mobile.svg");
   background-repeat: no-repeat;
   background-position: left top;
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 211px;
+    top: 57px;
     left: 390px;
+    background-image: url("../img/program-slim-tablet.svg");
     background-size: 200px 211px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100px;
     height: 100px;
-    top: 0;
-    left: 40px;
+    top: 8px;
+    left: 51px;
     background-size: 100px 100px;
   }
 }
 
 .nutrition-program__content {
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 19px;
   margin-right: 33px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid @bottom;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   color: @grey-black;
   text-align: left;
 
@@ -114,16 +148,20 @@
 }
 
 .nutrition-program__link {
+  margin-top: 5px;
   margin-left: 20px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   float: left;
+  text-decoration: none;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin: 0;
+    margin-left: -2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -132,30 +170,56 @@
 }
 
 .nutrition-program__link svg {
-  padding-left: 25px;
+  padding-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-bottom: 4px;
+  }
 }
 
 .nutrition-program__content--slim {
   @media (min-width: @tablet-width) {
+    margin-left: -2px;
+    padding-bottom: 51px;
     width: 377px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 51px;
+    padding-top: 24px;
+    padding-bottom: 1px;
+    width: 470px;
   }
 }
 
 .nutrition-program__content--pro {
   @media (min-width: @tablet-width) {
+    margin-left: -2px;
+    padding-bottom: 49px;
     width: 342px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 48px;
+    margin-top: 74px;
+    padding-bottom: 1px;
+    width: 455px;
   }
 }
 
 .nutrition-program__subject--pro {
   margin-left: 40px;
+  padding-top: 7px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    margin-left: -2px;
+    margin-bottom: 25px;
+    padding-top: 41px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 40px;
+    margin-left: 56px;
   }
 }
 
@@ -165,22 +229,24 @@
   width: 67px;
   height: 50px;
   left: -30px;
-  background-image: url(../img/program-pro.svg);
+  top: 0;
+  background-image: url("../img/program-pro.svg");
   background-repeat: no-repeat;
   background-position: left top;
 
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 200px;
-    left: 350px;
+    left: 358px;
+    top: 55px;
     background-size: 268px 200px;
   }
 
   @media (min-width: @desktop-width) {
     width: 134px;
     height: 100px;
-    top: 0;
-    left: 10px;
+    top: 10px;
+    left: -26px;
     background-size: 134px 100px;
   }
 }

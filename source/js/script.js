@@ -1,10 +1,10 @@
 var toggle = document.querySelector('.page-header__toggle');
-var pageHeaderLink = document.querySelector('.page-header__link');
+var pageHeaderLink = document.querySelector('.page-header__logo-mobile');
 var mainNav = document.querySelector('.main-nav');
 var listCross = document.querySelector('.site-list__cross');
 
-pageHeaderLink.classList.remove('page-header--nojs');
-toggle.classList.remove('page-header--nojs');
+pageHeaderLink.classList.remove('page-header__nojs');
+toggle.classList.remove('page-header__nojs');
 mainNav.classList.remove('main-nav--opened');
 mainNav.classList.add('main-nav--closed');
 listCross.classList.remove('site-list__cross--nojs');

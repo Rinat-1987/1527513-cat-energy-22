@@ -2,10 +2,11 @@
   background-color: @background;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 15px;
+  padding-bottom: 4px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    margin-bottom: -1px;
+    padding: 0;
     background-color: @white;
   }
 }
@@ -19,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 77px;
     width: 1220px;
   }
 }
@@ -34,6 +35,7 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    margin-top: -3px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -43,7 +45,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     background-color: @background;
-    padding-bottom: 70px;
+    padding-bottom: 0;
   }
 }
 
@@ -52,7 +54,8 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 300px;
+    padding-top: 3px;
+    margin-bottom: 265px;
     width: 708px;
   }
 
@@ -65,18 +68,22 @@
 }
 
 .example-cat__text {
-  margin-top: 33px;
-  font-family: Arial;
+  margin-top: 35px;
+  font-family: "Arial", sans-serif;
   text-align: left;
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    width: 700px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 60px;
+    margin-top: 67px;
+    margin-left: 14px;
+    margin-bottom: 54px;
     width: 436px;
   }
 }
@@ -88,7 +95,7 @@
   margin-top: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 40px;
+    padding-top: 30px;
     width: 366px;
   }
 }
@@ -96,6 +103,16 @@
 .example-cat__advantages-container {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 0;
+  margin-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18px;
+  }
 }
 
 .example-cat__advantages-container-first::after {
@@ -103,19 +120,36 @@
   position: absolute;
   width: 124px;
   height: 56px;
-  left: 2px;
-  top: -11px;
-  background-image: url(../img/polyline.png);
+  left: -1px;
+  top: -14px;
+  background-image: url("../img/polyline.png");
 
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
     width: 162px;
     height: 72px;
-    left: 1px;
-    top: 24px;
-    background-image: url(../img/polyline-tablet-first.png);
+    left: -1px;
+    top: 15px;
+    background-image: url("../img/polyline-tablet-first.png");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 15px;
+  }
+}
+
+.example-cat__advantages-container-second {
+  margin-top: 0;
+  margin-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -18px;
   }
 }
 
@@ -132,31 +166,38 @@
   position: absolute;
   width: 124px;
   height: 56px;
-  left: 147px;
-  top: -12px;
-  background-image: url(../img/polyline.png);
+  left: 154px;
+  top: -14px;
+  background-image: url("../img/polyline.png");
 
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
     width: 162px;
     height: 72px;
-    left: 186px;
-    top: 23px;
-    background-image: url(../img/polyline-tablet-second.png);
+    left: 203px;
+    top: 13px;
+    background-image: url("../img/polyline-tablet-second.png");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 219px;
   }
 }
 
 .example-cat__term {
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-left: -9px;
   width: 60px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 11px;
+    margin-left: 3px;
     width: auto;
     font-size: 14px;
     line-height: 14px;
@@ -170,6 +211,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-left: 6px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -183,6 +225,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: -8px;
+  margin-left: -1px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -194,7 +238,8 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-left: 16px;
     width: 325px;
   }
 }
@@ -204,9 +249,8 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 2px 3px 0;
     font-size: 20px;
     line-height: 20px;
   }
 }
-

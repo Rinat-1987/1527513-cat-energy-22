@@ -1,8 +1,17 @@
-.footer__wrapper {
+.footer {
   margin: 0 auto;
 }
 
-.footer__wrapper--grey {
+.footer iframe {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.footer--grey {
+  padding-top: 1px;
   background-color: @grey;
 }
 
@@ -15,7 +24,7 @@
     width: 630px;
   }
 
-    @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 1220px;
   }
 }
@@ -23,77 +32,104 @@
 .footer__cooperation {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 280px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    margin: 48px auto 41px;
     width: 630px;
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: space-around;
     position: absolute;
-    top: 75px;
-    width: 470px;
-    height: 120px;
+    top: 48px;
+    width: 483px;
+    padding: 52px 28px 40px 59px;
     background-color: @white;
   }
 }
 
 .footer__slogan {
+  width: min-content;
   font-size: 16px;
+  line-height: 21px;
   text-transform: uppercase;
   color: @footer;
 
   @media (min-width: @tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    line-height: 21px;
-    margin-right: 87px;
+    line-height: 24px;
+    margin-right: 25px;
   }
 }
 
 .footer__address {
-  font-family: Arial;
+  margin-top: 19px;
+  margin-left: 18px;
+  width: 150px;
+  font-family: "Arial", sans-serif;
   line-height: 20px;
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 16px;
     width: 159px;
     font-size: 16px;
     text-align: right;
   }
 
   @media (min-width: @desktop-width) {
+    margin-right: 43px;
     text-align: initial;
+  }
+}
+
+.footer__address-street {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 4px;
+  }
+}
+
+.footer__address-city {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+    margin-right: 3px;
   }
 }
 
 .map-marker {
   content: "";
   position: absolute;
-  top: 220px;
-  left: 100px;
+  top: 243px;
+  left: 114px;
   z-index: 3;
   width: 57px;
   height: 53px;
-  background-image: url(../img/map-marker-mobile.png);
+  background-image: url("../img/map-marker-mobile.png");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    left: 250px;
+    left: 264px;
+    top: 298px;
     width: 113px;
     height: 106px;
-    background-image: url(../img/map-marker-tablet.png);
+    background-image: url("../img/map-marker-tablet.png");
   }
 
   @media (min-width: @desktop-width) {
-    left: 550px;
-    top: 90px;
+    left: 796px;
+    top: 137px;
   }
 }
 
@@ -118,20 +154,19 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 55px 110px 61px;
+    padding: 65px 110px 61px;
   }
 }
 
 .footer-contacts__logo {
   position: relative;
   margin: 0 auto;
-  padding: 39px 96px 35px;
+  padding: 37px 96px 35px;
   width: 128px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
-    margin-left: 30px;
     border-bottom: none;
   }
 }
@@ -151,20 +186,19 @@
 }
 
 .footer-contacts__logo::after {
-  top: 165px;
+  top: 154px;
 }
 
 .footer-contacts__logo::before {
-  top: 95px;
+  top: 91px;
 }
 
 .footer-contacts__list {
   display: flex;
   justify-content: space-around;
-  padding: 0;
   margin: 0 auto;
-  padding: 20px 97px 21px 93px;
-  width: 129px;
+  padding: 16px 72px 21px;
+  width: 166px;
   list-style: none;
   text-align: center;
 
@@ -175,14 +209,41 @@
 }
 
 .footer-contacts__item--fb {
-  margin-top: -3px;
+  margin-top: -2px;
+}
+
+.footer-contacts__vk {
+  @media (min-width: @tablet-width) {
+    margin-left: 21px;
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.footer-contacts__inst {
+  @media (min-width: @tablet-width) {
+    margin-left: 8px;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.footer-contacts__fb {
+  fill: none;
+
+  @media (min-width: @tablet-width) {
+    margin-right: -3px;
+    margin-top: -3px;
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .footer-contacts__copyright {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 28px 19px 12px;
+  padding: 25px 18px 12px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
@@ -193,13 +254,14 @@
 }
 
 .footer-contacts__copyright-text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
-    margin-right: 10px;
+    margin-top: 2px;
+    margin-right: 25px;
   }
 }
 
