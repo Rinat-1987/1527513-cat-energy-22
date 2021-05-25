@@ -23,7 +23,7 @@
     right: 0;
     width: calc(100vw - 50%);
     height: 694px;
-    background-image: url("../img/index-background-desktop.jpg");
+    background: @green url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100% 694px;
     z-index: 1;
@@ -128,11 +128,11 @@
 }
 
 .general-poster__link {
+  display: block;
   margin: 0 auto;
   padding: 9px 73px;
-  width: 280px;
+  min-height: 20px;
   text-transform: uppercase;
-  white-space: nowrap;
 
   @media (min-width: @tablet-width) {
     position: absolute;

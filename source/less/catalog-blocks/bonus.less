@@ -3,7 +3,7 @@
   margin: 0 auto;
   width: 280px;
   background-image: url("../img/bonus-background-mobile.png");
-  background-size: 280px 289px;
+  background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -15,20 +15,15 @@
     flex-direction: row;
     margin: 70px 27px 64px;
     width: 708px;
-    min-height: 200px;
     align-items: center;
-    background-size: 708px 200px;
     background-image: url("../img/bonus-background-tablet.png");
     background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-top: 54px;
+    margin: 54px 0 86px;
     width: 245px;
-    min-height: 100px;
     background-image: url("../img/bonus-background-desktop.png");
-    background-size: 245px 289px;
     text-align: center;
   }
 }
