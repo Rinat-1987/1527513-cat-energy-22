@@ -55,6 +55,21 @@
   }
 }
 
+.general-poster__wrapper::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 0;
+  width: 320px;
+  height: 302px;
+  background-color: @green;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .general-poster__title {
   margin: 0;
   padding-top: 27px;

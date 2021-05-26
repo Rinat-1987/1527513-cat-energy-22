@@ -28,6 +28,27 @@
   }
 }
 
+.bonus::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 310px;
+  background-color: @green;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 283px;
+  }
+}
+
 .bonus__text {
   margin-top: 43px;
   padding-top: 186px;
