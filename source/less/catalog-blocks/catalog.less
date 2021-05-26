@@ -196,6 +196,7 @@
   padding: 10px;
   margin-top: 4px;
   margin-left: 20px;
+  margin-bottom: 40px;
   width: 259px;
   min-height: 20px;
   font-size: 16px;
@@ -219,7 +220,7 @@
 
 .catalog__item--additional {
   display: block;
-  padding-bottom: 23px;
+  margin-bottom: -10px;
   margin: -15px auto 0;
   background-color: @white;
   border-bottom: 1px solid @border;
@@ -227,7 +228,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 11px;
     width: 320px;
-    min-height: 375px;
+    height: 375px;
     border: 1px solid @grey;
   }
 
@@ -235,7 +236,7 @@
     margin: 0;
     margin-top: 7px;
     width: 245px;
-    height: 405px;
+    min-height: 430px;
   }
 }
 
@@ -272,7 +273,7 @@
   color: @grey-black;
 
   @media (min-width: @tablet-width) {
-    margin: 26px auto 97px;
+    margin: 26px auto 83px;
     width: 167px;
     font-size: 16px;
     line-height: 18px;
@@ -292,12 +293,11 @@
   white-space: normal;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
-    padding: 10px 85px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     padding: 10px 40px;
-    width: 168px;
+    width: 100px;
   }
 }
