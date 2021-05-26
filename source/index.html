@@ -59,7 +59,14 @@
         <div class="general-poster__wrapper">
           <h1 class="general-poster__title">Функциональное<br> питание для котов</h1>
           <p class="general-poster__slogan">Занялся собой? Займись котом!</p>
-          <img class="general-poster__img" src="img/index-product-mobile.png" width="280" height="270" srcset="img/index-product-mobile@2x.png 2x" alt="Упаковка корма для кота">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-product-desktop.webp 1x, img/index-product-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-product-tablet.webp 1x, img/index-product-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="iimg/index-product-mobile.webp 1x, img/index-product-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-product-desktop.png 1x, img/index-product-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-product-tablet.jpg 1x, img/index-product-tablet@2x.png 2x">
+            <img class="general-poster__img" src="img/index-product-mobile.png" width="280" height="270" srcset="img/index-product-mobile@2x.png 2x" alt="Упаковка корма для кота">
+          </picture>
           <a class="button general-poster__link" href="form.html" tabindex="0">Подобрать программу</a>
         </div>
       </div>
